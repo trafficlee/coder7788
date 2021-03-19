@@ -1,13 +1,13 @@
- #[环形队列（数组实现）]()
+ # [环形队列（数组实现）]()
 
-  大家可以通过下面的动图了解下环形队列：
+  ## 大家可以通过下面的动图了解下环形队列：
 
  ![](https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fstatic.zybuluo.com%2FMaxChen%2F1em23n9giu0ultzhj9rrxc54%2F%25E7%258E%25AF%25E5%25BD%25A2%25E9%2598%259F%25E5%2588%2597.gif&refer=http%3A%2F%2Fstatic.zybuluo.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1618723292&t=c99312c451f4eef92971fb874c5291d0)
 
 
  ![](../img/queue2.png)
 
- ###思路分析：
+ ### 思路分析：
 + maxSize ：队列容量（数组的长度）
 + arr ：模拟队列的数组
 + front ：指向队列头部元素，初始值为 0
@@ -15,7 +15,7 @@
 
  ![](../img/queue3.png)
 
-###基本操作：
+### 基本操作：
 + 队列判空：front == rear
 + 队列判满：
   
@@ -46,7 +46,7 @@
 
 
 
-  ###代码实现：
+  ### 代码实现：
 ```aidl
 class CircleArray {
 	private int maxSize; // 表示数组的最大容量
@@ -134,13 +134,10 @@ class CircleArray {
 		return arr[front];
 	}
 }
-————————————————
-版权声明：本文为CSDN博主「OnebyWang」的原创文章，遵循CC 4.0 BY-SA版权协议，转载请附上原文出处链接及本声明。
-原文链接：https://blog.csdn.net/oneby1314/article/details/107584566
 ```
 
 
-###代码测试：
+### 代码测试：
 
 ```aidl
 public class CircleArrayQueueDemo {
@@ -207,7 +204,7 @@ public class CircleArrayQueueDemo {
 
 ```
 
-###程序运行结果：
+### 程序运行结果：
 ```aidl
 测试数组模拟环形队列的案例~~~
 s(show): 显示队列
